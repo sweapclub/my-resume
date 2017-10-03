@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y:auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+
+
+.content {
+  background-color:#F5F5F5;
+  width:calc(100% - 200px);
+  height:calc(100% - 64px);
+  overflow:auto;
+  text-align:left;
+  float:right;
+  z-index:0;
+}
+
+.header-toolbar {
+  background-color:#0f1626;
+  color: white;
+  z-index: 4;
+  border-radius: 0;
+}
+
+.side-menu {
+  color:white;
+    height:calc(100% - 64px);
+    width:200px;
+    overflow:auto;
+    overflow:hidden;
+    /* overflow-y:auto; */
+  }
+
+.card-side {
+  padding:0px;
+  z-index: 2;
+  border-radius: 0;
+  height: 100%;
+  overflow-y:auto;
+  background-color:#FF533D;
+}
+
+.list-link{
+  padding-left:0px;
+}
+
+div.mat-list-item-content {
+  padding:0px;
+}
+
+.mat-list {
+  padding:0px;
+}
+
+.selecter-selected{
+  background-color: #3949ab;
+
+}
+.mat-list-item-content >.selecter-selected :hover {
+  background-color: #3949ab;
+}
+
+.selecter {
+  color:white;
+  text-shadow: 2px 2px 5px grey;
+}
