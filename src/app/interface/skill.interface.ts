@@ -4,6 +4,7 @@ export class SkillInterface {
     database: String,
     frontEnd: String,
     otherLanguage: String,
-    otherLanguagePerformance: String
+    otherLanguagePerformance: String,
+    vc: String
   ) {}
 }
