@@ -1,0 +1,21 @@
+<md-card class="content-container">
+
+  <md-card-header>
+    <md-icon style="padding-right:24px;">question_answer</md-icon>
+    <h1 class="mat-headline">About me </h1>
+  </md-card-header>
+  <hr>
+  <h2 class="mat-h2">How to contact ?</h2>
+  <p>You can send Email to me directry. I alway check email everyday or another way below.</p>
+  <h2 class="mat-h2">Contact list !</h2>
+
+  <div>
+    <ng-container *ngFor="let contact of contacts | async">
+      <a [href]="contact.link" target="_blank" [style.background-color]="contact.backColor" [style.color]="contact.fontColor" md-raised-button>{{contact.name}}</a>
+    </ng-container>
+  </div>
+
+  <br>
+  <p>Have a nice day guys, Happy coding ...</p>
+
+</md-card>

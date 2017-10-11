@@ -1,0 +1,28 @@
+<md-card class="content-container" *ngFor="let edu of educations | async">
+
+  <md-card-header>
+    <!-- <div mat-card-avatar class="card-header-image"></div> -->
+    <md-icon style="padding-right:24px;">school</md-icon>
+    <h1 class="mat-headline">My Education</h1>
+  </md-card-header>
+
+  <hr>
+  <p class="mat-body-2"> Education :
+    <span class="mat-body-1">{{edu.education}}</span>
+  </p>
+  <p class="mat-body-2"> University :
+    <span class="mat-body-1">{{edu.school}}</span>
+  </p>
+  <p class="mat-body-2"> Faculty :
+    <span class="mat-body-1">{{edu.faculty}}</span>
+  </p>
+  <p class="mat-body-2"> Major :
+    <span class="mat-body-1">{{edu.major}}</span>
+  </p>
+  <p class="mat-body-2"> Grand year :
+    <span class="mat-body-1">{{edu.year}}</span>
+  </p>
+  <p class="mat-body-2"> GPA :
+    <span class="mat-body-1">{{edu.gpa}}</span>
+  </p>
+</md-card>

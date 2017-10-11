@@ -1,0 +1,34 @@
+<md-card class="content-container">
+
+  <md-card-header>
+    <md-icon style="padding-right:24px;">work</md-icon>
+    <h1 class="mat-headline">My Experience</h1>
+
+  </md-card-header>
+
+
+  <div *ngFor="let exp of experiences | async">
+    <md-card class="content-container">
+      <md-card-header>
+        <md-card-title>{{exp.company}}</md-card-title>
+        <md-card-subtitle>{{exp.duration}}</md-card-subtitle>
+      </md-card-header>
+      <hr>
+      <md-card-content>
+        <p class="mat-body-2"> Job Description :
+          <span class="mat-body-1">{{exp.jobDuty}}</span>
+        </p>
+        <p class="mat-body-2"> Position :
+          <span class="mat-body-1">{{exp.position}}</span>
+        </p>
+        <p class="mat-body-2"> Front-End Skill :
+          <span class="mat-body-1">{{exp.programing}}</span>
+        </p>
+        <p class="mat-body-2"> Back-End Skill :
+          <span class="mat-body-1">{{exp.database}}</span>
+        </p>
+      </md-card-content>
+    </md-card>
+    <br>
+  </div>
+</md-card>

@@ -1,0 +1,17 @@
+<md-card class="content-container">
+  <md-card-header>
+    <md-icon style="padding-right:24px;">fingerprint</md-icon>
+    <h1 class="mat-headline">About me </h1>
+  </md-card-header>
+  <hr>
+  <div *ngFor="let am of aboutMe | async">
+    <h2 class="mat-h2">Tell about myself</h2>
+    <p>{{am.aboutMe}}</p>
+
+    <h2 class="mat-h2">What am i interest ?</h2>
+    <p>{{am.interest}}</p>
+
+    <h2 class="mat-h2">Tech I want to work with !</h2>
+    <p>{{am.techWantToWork}}</p>
+  </div>
+</md-card>

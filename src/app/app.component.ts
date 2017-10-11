@@ -39,17 +39,19 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
     ]),
   ]
 })
+
 export class AppComponent {
   sideMenu = [
-    { id: 0, name: 'Profile', link: '#', icon: 'account_circle' },
-    { id: 1, name: 'Education', link: '#', icon: 'school' },
-    { id: 2, name: 'Experience', link: '#', icon: 'work' },
-    { id: 3, name: 'Skill', link: '#', icon: 'code' },
-    { id: 4, name: 'Hobby', link: '#', icon: 'videogame_asset' },
-    { id: 5, name: 'Contact Me', link: '#', icon: 'question_answer' }
+    { id: 0, name: 'Profile', link: '/profile', icon: 'account_circle' },
+    { id: 1, name: 'Education', link: '/education', icon: 'school' },
+    { id: 2, name: 'Experience', link: '/experience', icon: 'work' },
+    { id: 3, name: 'Skill', link: '/skill', icon: 'code' },
+    { id: 4, name: 'Hobby', link: '/hobby', icon: 'videogame_asset' },
+    { id: 5, name: 'About Me', link: '/aboutMe', icon: 'fingerprint'},
+    { id: 6, name: 'Contact Me', link: '/contact', icon: 'question_answer' }
   ];
   state: String = '';
-  selectedMenu = 0;
+  selectedMenu: Number = 0;
 
   constructor() {
     if (window.innerWidth > 720) {
@@ -67,7 +69,4 @@ export class AppComponent {
   }
 
 
-  animateMe() {
-    // this.state = (this.state === 'small' ? 'large' : 'small');
-  }
 }

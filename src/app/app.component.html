@@ -8,22 +8,31 @@
   <div [@resize-side-content]='state' class="content">
     <div style="padding:10px;">
       <section class="mat-typography">
-        <h1>This header will be styled</h1>
-        <p>it's ok on padding bitch!</p>
+        <router-outlet></router-outlet>
       </section>
-
     </div>
   </div>
+
+  <div [@resize-side-content]='state' class="content-footer">
+    <div style="padding:10px;">
+      <section class="mat-typography">
+        <!-- <p style="color:#e5e5e5; margin:0px;">Power by Nuttasuk Munhadee</p> -->
+        <p style="color:#e5e5e5; margin:0px;" class="mat-caption">Power By : Angular Cli, Angular4, Material Angular and Firebase</p>
+        <!-- body-1 - Base body text.
+        body-2 - Bolder body text.
+        caption - Smaller body and hint text. -->
+      </section>
+    </div>
+  </div>
+
   <div [@resize-side-menu]='state' class="side-menu">
     <md-card class="card-side">
-      <md-nav-list class="list-link">
-        <md-list-item *ngFor="let menu of sideMenu" class="selecter" [ngClass]="{'selecter-selected': selectedMenu == menu.id}">
+      <md-nav-list>
+        <md-list-item class="selecter" routerLinkActive="selecter-selected" *ngFor="let menu of sideMenu" [routerLink]="menu.link">
           <md-icon md-list-icon>{{menu.icon}}</md-icon>
-          <a mdLine href="{{menu.link}}"><p>{{menu.name}}</p></a>
+          <a mdLine>{{ menu.name }}</a>
         </md-list-item>
       </md-nav-list>
     </md-card>
   </div>
 </div>
-
-<!-- {{width}} {{height}} -->

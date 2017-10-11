@@ -1,0 +1,72 @@
+<md-card class="content-container" *ngFor="let p of profile | async">
+
+  <md-card-header>
+    <div mat-card-avatar class="card-header-image"></div>
+    <h1 class="mat-headline">My Profile</h1>
+  </md-card-header>
+
+  <hr>
+
+<!--
+  <h2 class="mat-h2">Full Name</h2>
+  <p class="mat-body-1">{{p.fullName}}</p>
+  <h2 class="mat-h2">Nickname</h2>
+  <p class="mat-body-1">{{p.nickName}}</p>
+  <h2 class="mat-h2">Date of Birth</h2>
+  <p class="mat-body-1">{{p.dob}} ({{CalculateAge(p.dob)}} years old)</p>
+  <h2 class="mat-h2">Gender</h2>
+  <p class="mat-body-1">{{p.gender}}</p>
+  <h2 class="mat-h2">Status</h2>
+  <p class="mat-body-1">{{p.status}}</p>
+  <h2 class="mat-h2">Height/Weight</h2>
+  <p class="mat-body-1">{{p.height}} cm. / {{p.weight}} kg.</p>
+  <h2 class="mat-h2">Nationality</h2>
+  <p class="mat-body-1">{{p.nationality}}</p>
+  <h2 class="mat-h2">Religion</h2>
+  <p class="mat-body-1">{{p.religion}}</p>
+  <h2 class="mat-h2">Military</h2>
+  <p class="mat-body-1">{{p.military}}</p>
+  <h2 class="mat-h2">Current Address</h2>
+  <p class="mat-body-1">{{p.address}}</p>
+  <h2 class="mat-h2">Mobile</h2>
+  <p class="mat-body-1">{{p.tel}}</p>
+  <h2 class="mat-h2">E-mail</h2>
+  <p class="mat-body-1">{{p.email}}</p> -->
+
+
+  <p class="mat-body-2"> Full Name :
+    <span class="mat-body-1">{{p.fullName}}</span>
+  </p>
+  <p class="mat-body-2"> Nickname :
+    <span class="mat-body-1">{{p.nickName}}</span>
+  </p>
+  <p class="mat-body-2"> Date of Birth :
+    <span class="mat-body-1">{{p.dob}} ({{CalculateAge(p.dob)}} years old)</span>
+  </p>
+  <p class="mat-body-2"> Gender :
+    <span class="mat-body-1">{{p.gender}}</span>
+  </p>
+  <p class="mat-body-2"> Status :
+    <span class="mat-body-1">{{p.status}}</span>
+  </p>
+  <p class="mat-body-2"> Height / Weight :
+    <span class="mat-body-1">{{p.height}} cm. / {{p.weight}} kg.</span>
+  </p>
+  <p class="mat-body-2"> Nationality :
+    <span class="mat-body-1">{{p.nationality}}</span>
+  </p>
+  <p class="mat-body-2"> Religion :
+    <span class="mat-body-1">{{p.religion}}</span>
+  </p>
+  <p class="mat-body-2"> Military :
+    <span class="mat-body-1">{{p.military}}</span>
+  </p>
+  <p class="mat-body-2"> Current Address :
+    <span class="mat-body-1">{{p.address}}</span>
+  </p>
+  <p class="mat-body-2"> Mobile :
+    <span class="mat-body-1">{{p.tel}}</span>
+  </p>
+  <p class="mat-body-2"> E-Mail :
+    <span class="mat-body-1">{{p.email}}</span>
+</md-card>

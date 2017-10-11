@@ -8,3 +8,5 @@ html,body {
   margin:0;
   overflow:hidden;
 }
+
+.content-container {max-width:950px; margin:0 auto;}

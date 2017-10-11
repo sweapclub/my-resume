@@ -1,0 +1,20 @@
+<md-card class="content-container">
+    <md-card-header>
+      <md-icon style="padding-right:24px;">code</md-icon>
+      <h1 class="mat-headline">Skill </h1>
+    </md-card-header>
+    <hr>
+    <div *ngFor="let skill of skills | async">
+      <h2 class="mat-h2">Other Language</h2>
+      <p>{{skill.otherLanguage}}</p>
+
+      <h2 class="mat-h2">Fontend Skill</h2>
+      <p>{{skill.frontEnd}}</p>
+
+      <h2 class="mat-h2">Backend Skill</h2>
+      <p>{{skill.backEnd}}</p>
+
+      <h2 class="mat-h2">Database Skill</h2>
+      <p>{{skill.database}}</p>
+    </div>
+  </md-card>
