@@ -6,19 +6,30 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [ {
-      "source" : "/foo",
-      "destination" : "/bar",
-      "type" : 301
-    }, {
-      "source" : "/firebase/*",
-      "destination" : "https://www.firebase.com",
-      "type" : 302
-    } ],
+    "redirects": [
+      {
+        "source": "/foo",
+        "destination": "/bar",
+        "type": 301
+      },
+      {
+        "source": "/firebase/*",
+        "destination": "https://www.firebase.com",
+        "type": 302
+      }
+    ],
+    // "rewrites": [
+    //   {
+    //     "source": "/dist/**",
+    //     "destination": "/dist/index.html"
+    //   }
+    // ],
+
     "rewrites": [ {
-      "source": "/dist/**",
-      "destination": "/dist/index.html"
+      "source": "**/!(*.js|*.html|*.css|*.json|*.svg|*.png|*.jpg|*.jpeg)",
+      "destination": "/index.html"
     } ],
+
     // "headers": [ {
     //   "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
     //   "headers" : [ {
